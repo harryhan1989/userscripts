@@ -1,16 +1,19 @@
 // ==UserScript==
-// @name                 Subscene auto-language
-// @version              1.0
-// @description        Autoselect subscene's language based on the one of your browser.
+// @name                Subscene auto-language
+// @version             1.0.1
+// @description         Autoselect subscene's language based on the one of your browser.
 // @match               http://subscene.com/*
 // @match               http://*.subscene.com/*
-// @updateURL       https://raw.github.com/bre7/userscripts/master/subscene_autolang/subscene_autolang.user.js
-// @downloadURL   https://raw.github.com/bre7/userscripts/master/subscene_autolang/subscene_autolang.user.js
+// @homepageURL         http://userscripts.org/scripts/show/160056
+// @grant               GM_log
+// @updateURL           https://raw.github.com/bre7/userscripts/master/subscene_autolang/subscene_autolang.user.js
+// @downloadURL         https://raw.github.com/bre7/userscripts/master/subscene_autolang/subscene_autolang.user.js
 // @copyright           2013+
 // ==/UserScript==
 
 
 var langNames = {"Arabic" : 2,"Danish" : 10,"Dutch" : 11,"English" : 13,"French" : 18,"Indonesian" : 44,"Italian" : 26,"Norwegian" : 30,"Spanish" : 38,"Swedish" : 39,"Vietnamese" : 45,"Albanian" : 1,"Azerbaijani" : 55,"Bengali" : 54,"Bosnian" : 60,"Bulgarian" : 5,"Catalan" : 49,"Croatian" : 8,"Czech" : 9,"Esperanto" : 47,"Estonian" : 16,"Finnish" : 17,"German" : 19,"Greek" : 21,"Greenlandic" : 57,"Hebrew" : 22,"Hindi" : 51,"Hungarian" : 23,"Icelandic" : 25,"Japanese" : 27,"Korean" : 28,"Kurdish" : 52,"Latvian" : 29,"Lithuanian" : 43,"Macedonian" : 48,"Malay" : 50,"Polish" : 31,"Portuguese" : 32,"Romanian" : 33,"Russian" : 34,"Serbian" : 35,"Sinhala" : 58,"Slovak" : 36,"Slovenian" : 37,"Tagalog" : 53,"Tamil" : 59,"Thai" : 40,"Turkish" : 41,"Ukranian" : 56,"Urdu" : 42};
+// Add own lang
 var langCodes = {"en" : "English", "fr" : "French", "es" : "Spanish", "ar" : "Arabic"};
 
 document.addEventListener( "DOMContentLoaded", SetCookie, false );
