@@ -26,8 +26,9 @@ function SetCookie() {
         language = language.split('-');
         var parsedLang = langNames[langCodes[language]];
 
-        CreateCookies();
-        GM_log("Cookies created =P - User: " + language + " Parsed: " + parsedLang);
+        CreateCookies(parsedLang);
+        GM_log("Cookies created =P");
+    	GM_log(">User lang.: " + language + " >Lang name: " + langCodes[language] + " >Site lang number: " + parsedLang);
     }
 }
 
