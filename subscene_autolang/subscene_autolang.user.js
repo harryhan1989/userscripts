@@ -2,8 +2,8 @@
 // @name                Subscene auto-language
 // @version             1.0.1
 // @description         Autoselect subscene's language based on the one of your browser.
-// @match               http://subscene.com/*
-// @match               http://*.subscene.com/*
+// @include             http://subscene.com/*
+// @include             http://*.subscene.com/*
 // @homepageURL         http://userscripts.org/scripts/show/160056
 // @grant               GM_log
 // @updateURL           https://raw.github.com/bre7/userscripts/master/subscene_autolang/subscene_autolang.user.js
