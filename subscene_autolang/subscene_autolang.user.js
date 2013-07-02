@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name                Subscene auto-language
-// @version             1.0.2
+// @version             1.1
 // @description         Autoselect subscene's language based on the one of your browser.
 // @include             http://subscene.com/*
 // @include             http://*.subscene.com/*
@@ -28,12 +28,17 @@ function SetCookie() {
 
         CreateCookies(parsedLang);
         GM_log("Cookies created =P");
-    	GM_log(">User lang.: " + language + " >Lang name: " + langCodes[language] + " >Site lang number: " + parsedLang);
+        GM_log(">User lang.: " + language + " >Lang name: " + langCodes[language] + " >Site lang number: " + parsedLang);
     }
 }
 
 function CreateCookies(lang, impared) {
-    document.cookie = "LanguageFilter=" + lang + "; path=/";
+    // Always add ENGLISH
+    if(lang != langNames[langCodes["en"]]){
+    	document.cookie = "LanguageFilter=" + lang + "," + langNames[langCodes["en"]] + "; path=/";
+    }else{
+        document.cookie = "LanguageFilter=" + lang + "; path=/";
+    }
     /*
      * HearingImpaired values:
      * 0 => Don't show HearingImpaired
@@ -41,6 +46,8 @@ function CreateCookies(lang, impared) {
      *   => Show all
      */
     document.cookie = "HearingImpaired=" + "; path=/";
+    
+    document.cookie = "SortSubtitlesByDate=" + true + "; path=/";
 }
 
 
