@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name           Don't track me Google
-// @author      Rob W
+// @author         Rob W
 // @description    Removes the annoying link-conversion at Google Search/maps/... The Referrer is also hidden to improve your privacy. Designed for Firefox and Google Chrome.
 // @version        3.6
 
-// @updateURL   https://github.com/bre7/userscripts/raw/master/dont_track_me_google/dnt_google.user.js
-// @downloadURL https://github.com/bre7/userscripts/raw/master/dont_track_me_google/dnt_google.user.js
+// @updateURL      https://github.com/bre7/userscripts/raw/master/dont_track_me_google/dnt_google.user.js
+// @downloadURL    https://github.com/bre7/userscripts/raw/master/dont_track_me_google/dnt_google.user.js
 
 // @match    *://*.google.com/*
 // @match    *://*.google.ad/*
