@@ -7,7 +7,7 @@
 // @updateURL      https://github.com/bre7/userscripts/raw/master/dont_track_me_google/dnt_google.user.js
 // @downloadURL    https://github.com/bre7/userscripts/raw/master/dont_track_me_google/dnt_google.user.js
 
-// @match    *://*.google.com/*  
+// @match    *://*.google.com/*
 // @match    *://*.google.ad/*
 // @match    *://*.google.ae/*
 // @match    *://*.google.com.af/*
